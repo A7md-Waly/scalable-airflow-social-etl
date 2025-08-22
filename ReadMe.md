@@ -11,6 +11,8 @@ SOCIAL_MEDIA_ANALYTICS/
 ├── Output/
 │   └── sample_data/
 │       └── social_posts.json    # Sample output data
+├── sql/
+│   └── init_tables.sql          # Social media schema
 ├── src/
 │   └── collectors/
 │       ├── test_x_api.py        # X (Twitter) API collector
