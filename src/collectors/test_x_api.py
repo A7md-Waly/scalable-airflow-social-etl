@@ -2,7 +2,7 @@ import requests
 import json
 
 def test_x_api():
-    bearer_token = "AAAAAAAAAAAAAAAAAAAAALqS3gEAAAAAG%2BczfRrirqTNfnu%2FOFVAnZ500Hs%3DsFvWK7ry8CJ4EFjhaYWxA4cZ114TW2EcZ1e1j7QeulJROnQoIg"
+    bearer_token = os.getenv("X_BEARER_TOKEN")
     headers = {
         "Authorization": f"Bearer {bearer_token}",
         "User-Agent": "SocialMediaAnalytics/1.0"
