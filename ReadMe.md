@@ -2,7 +2,7 @@
 
 A comprehensive **data pipeline** that collects data from **X (Twitter)** and **YouTube**, processes it, and stores it in a **PostgreSQL database**. The pipeline is orchestrated using **Apache Airflow** running in Docker containers.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 SOCIAL_MEDIA_ANALYTICS/
@@ -15,13 +15,11 @@ SOCIAL_MEDIA_ANALYTICS/
 │   └── collectors/
 │       ├── test_x_api.py        # X (Twitter) API collector
 │       └── test_youtube_api.py  # YouTube API collector
-├── .env                         # Environment variables (not tracked)
 ├── ReadMe.md                    # This file
-├── requirements.txt             # Python dependencies
-└── docker-compose.yml           # Docker services configuration
+└── requirements.txt             # Python dependencies
 ```
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 ### 1. Software Requirements
 - **Docker Desktop** - [Download here](https://www.docker.com/products/docker-desktop)
@@ -49,7 +47,7 @@ You'll need API credentials from both platforms:
 3. Enable **YouTube Data API v3**
 4. Create an **API Key**
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Step 1: Clone the Repository
 ```bash
@@ -196,7 +194,7 @@ docker exec -it <postgres_container> psql -U airflow -d airflow -c "\dt"
 - Keep your Docker images updated
 - Monitor API usage and costs
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/new-feature`)
@@ -204,14 +202,6 @@ docker exec -it <postgres_container> psql -U airflow -d airflow -c "\dt"
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Create a Pull Request
 
-
-## 📞 Support
-
-If you encounter any issues:
-1. Check the troubleshooting section above
-2. Review Airflow logs in the UI
-3. Open an issue on GitHub with detailed error messages
-
 ---
 
-**Happy Data Pipelining!** 🚀
+**Happy Data Pipelining!**
