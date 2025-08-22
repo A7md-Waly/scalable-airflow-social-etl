@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 def test_youtube_api():
-    api_key = "AIzaSyBK4-JY-2wCX73vOv0_zJsuhRsA5e-GnVU"
+    api_key = os.getenv("YT_BEARER_TOKEN")
     search_url = "https://www.googleapis.com/youtube/v3/search"
     search_params = {
         'key': api_key,
