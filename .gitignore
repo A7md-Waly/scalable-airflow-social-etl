@@ -1,0 +1,28 @@
+# Environment variables
+.env
+*.env
+
+# API Keys and secrets
+config.py
+secrets.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Airflow
+logs/
