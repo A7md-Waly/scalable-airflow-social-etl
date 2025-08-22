@@ -81,7 +81,6 @@ This will start:
 - 🌐 **Airflow Webserver** → http://localhost:8080
 - 📊 **Airflow Scheduler** → Background process
 - 🗄️ **PostgreSQL Database** → Port 5432
-- 🔄 **Redis** → Task queue management
 
 ### Step 4: Access Airflow UI
 1. Open your browser and go to: **http://localhost:8080**
@@ -122,7 +121,7 @@ docker exec -it <postgres_container_name> psql -U airflow -d airflow -f /opt/air
 2. Toggle it **ON** (switch on the left)
 3. Click **Trigger DAG** to run manually
 
-## 📊 Data Output
+## Data Output
 
 The pipeline collects and stores:
 - **X (Twitter) Posts**: Tweet content, engagement metrics, user info
@@ -130,7 +129,7 @@ The pipeline collects and stores:
 
 Sample output format can be found in `Output/sample_data/social_posts.json`
 
-## 🔧 Development & Testing
+## Development & Testing
 
 ### Local Testing
 ```bash
@@ -152,7 +151,7 @@ python src/collectors/test_youtube_api.py
   - User: `airflow`
   - Password: `airflow`
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -187,7 +186,7 @@ docker exec -it <postgres_container> psql -U airflow -d airflow -c "\dt"
 - Verify API endpoints are accessible
 - Ensure database tables exist
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 - Never commit API keys to version control
 - Use Airflow Variables or environment variables for sensitive data
