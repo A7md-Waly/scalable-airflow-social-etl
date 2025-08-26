@@ -19,7 +19,7 @@ SOCIAL_MEDIA_ANALYTICS/
 │       └── test_youtube_api.py  # YouTube API collector
 ├── ReadMe.md                    # This file
 ├── requirements.txt             # Python dependencies
-└──docker-compose.yml           # Docker services configuration
+└── docker-compose.yml           # Docker services configuration
 ```
 
 ## Prerequisites
